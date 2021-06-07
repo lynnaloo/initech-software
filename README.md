@@ -33,9 +33,11 @@ Durable Functions extension is built on top of the [Durable Task Framework](http
 }
 ```
 
-# Install
+## Install
 
 * Install [Node LTS](https://nodejs.org/)
+* Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+* Install [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2)
 
 * Clone this repository
 
@@ -50,7 +52,7 @@ $ cd initech
 $ npm install
 ```
 
-* Test Azure Functions locally:
+## Run Azure Functions locally:
 
 ```
 $ func start
@@ -59,5 +61,9 @@ $ func start
 * Trigger HTTP client function:
 
 ```
-http://[localhost]/orchestrators/TpsOrchestrator
+http://[localhost:port]/orchestrators/TpsOrchestrator
 ```
+
+## Deploy
+
+* [Deploy using Azure CLI](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-node?tabs=azure-cli%2Cbrowser#create-a-local-function-project)
