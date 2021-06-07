@@ -16,3 +16,48 @@ Durable Functions extension is built on top of the [Durable Task Framework](http
 * Corporate Accounts payable phone switchboard system
 * Cake purchasing calculation to fix the employee to cake ratio
 * IoT fire suppression system
+* Minimum flair calculator
+* Jump-to-conclusions app
+
+## Setup
+
+* Create your own `local.settings.json` file for your functions:
+
+```javascript
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "usedevelopmentstorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node"
+  }
+}
+```
+
+# Install
+
+* Install [Node LTS](https://nodejs.org/)
+
+* Clone this repository
+
+```
+$ git clone git@github.com:lynnaloo/initech-software.git
+```
+
+* Install libraries
+
+```
+$ cd initech
+$ npm install
+```
+
+* Test Azure Functions locally:
+
+```
+$ func start
+```
+
+* Trigger HTTP client function:
+
+```
+http://[localhost]/orchestrators/TpsOrchestrator
+```

@@ -1,0 +1,20 @@
+{
+  "name": "initech-software",
+  "version": "1.0.0",
+  "description": "Automation software to move into the year 2000",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\"",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "azure-storage": "^2.10.4",
+    "crypto": "^1.0.1",
+    "durable-functions": "^1.4.6",
+    "readdirp": "^3.6.0",
+    "request-promise-native": "^1.0.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0"
+  }
+}
