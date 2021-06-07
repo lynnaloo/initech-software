@@ -48,7 +48,7 @@ $ git clone git@github.com:lynnaloo/initech-software.git
 * Install libraries
 
 ```
-$ cd initech
+$ cd initech-software
 $ npm install
 ```
 
