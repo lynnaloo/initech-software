@@ -8,6 +8,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "applicationinsights": "^2.1.0",
     "azure-storage": "^2.10.4",
     "crypto": "^1.0.1",
     "durable-functions": "^1.4.6",

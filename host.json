@@ -17,7 +17,7 @@
       "routePrefix": ""
     },
     "durableTask": {
-      "hubName": "InfinitechHub"
+      "hubName": "InitechHub"
     }
   }
 }
