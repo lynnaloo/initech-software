@@ -6,27 +6,18 @@
 			"command": "host start",
 			"problemMatcher": "$func-node-watch",
 			"isBackground": true,
-			"dependsOn": "npm install",
-			"options": {
-				"cwd": "${workspaceFolder}"
-			}
+			"dependsOn": "npm install"
 		},
 		{
 			"type": "shell",
 			"label": "npm install",
-			"command": "npm install",
-			"options": {
-				"cwd": "${workspaceFolder}"
-			}
+			"command": "npm install"
 		},
 		{
 			"type": "shell",
 			"label": "npm prune",
 			"command": "npm prune --production",
-			"problemMatcher": [],
-			"options": {
-				"cwd": "${workspaceFolder}"
-			}
+			"problemMatcher": []
 		}
 	]
 }

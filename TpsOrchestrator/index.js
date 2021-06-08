@@ -3,7 +3,7 @@
  * triggered by a starter function.
  *
  * Before running this, please:
- * - run 'npm install durable-functions' 
+ * - run 'npm install durable-functions'
  */
 
 const df = require('durable-functions');
@@ -26,6 +26,6 @@ module.exports = df.orchestrator(function*(context){
         yield context.df.callActivity('SendManagerMemo', 'Lumbergh');
     }
 
-    // return results;
+    context.log(`${totalBytes} bytes of TPS Reports were uploaded.`);
     return totalBytes;
 });
