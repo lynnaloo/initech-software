@@ -18,14 +18,10 @@ module.exports = df.orchestrator(function*(context){
         tasks.push(context.df.callActivity('AddTpsCoverSheet', file));
     }
 
-    // Wait for everything to complete and notify Lumbergh
+    // Wait for everything to complete and then notify Lumbergh
     const results = yield context.df.Task.all(tasks);
     const totalBytes = results.reduce((prev, curr) => prev + curr, 0);
+    yield context.df.callActivity('SendManagerMemo', 'Lumbergh');
 
-    if (totalBytes > 0) {
-        yield context.df.callActivity('SendManagerMemo', 'Lumbergh');
-    }
-
-    context.log(`${totalBytes} bytes of TPS Reports were uploaded.`);
     return totalBytes;
 });
