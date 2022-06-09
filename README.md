@@ -11,13 +11,14 @@ Durable Functions extension is built on top of the [Durable Task Framework](http
 ## Using Durable Functions to automate the Office Space
 
 * Automatically add cover sheets to your TPS reports
+* Jump-to-conclusions mat application
+* [TODO] Superman III fractions of a penny aggregator
 * [TODO] Bob Slydell's Initech downsizing algorithm
 * [TODO] Payroll "glitch" fix
 * [TODO] Corporate Accounts payable phone switchboard system
 * [TODO] Cake purchasing calculation to fix the employee to cake ratio
 * [TODO] Fire risk monitoring system
 * [TODO] Minimum flair calculator
-* Jump-to-conclusions mat application
 
 ## Setup
 

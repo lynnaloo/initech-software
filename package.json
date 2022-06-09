@@ -11,7 +11,7 @@
     "applicationinsights": "^2.1.0",
     "azure-storage": "^2.10.4",
     "crypto": "^1.0.1",
-    "durable-functions": "^1.4.6",
+    "durable-functions": "^1.5.4",
     "readdirp": "^3.6.0",
     "request-promise-native": "^1.0.9"
   },
